@@ -37,3 +37,25 @@ When viewed in the program, it will display like:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/student-management-system.git
+
+2. - Navigate into the project folder:
+   cd student-management-system
+- 
+3. - Compile the Java files:
+   javac *.java
+
+4. - Run the program:
+   java StudentManagementSystem
+
+## 📖 Learning Outcomes
+- Understand Java File Handling concepts.
+- Implement CRUD operations without a database.
+- Apply real-world logic for file-based data management.
+- Build menu-driven console applications.
+
+
+
+
+
+- 
+
