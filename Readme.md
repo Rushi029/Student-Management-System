@@ -23,6 +23,7 @@ All student records are stored in a text file (`studentsRecords.txt`) in the for
 ---
 
 ## 📂 Project Structure
+   StudentManagementSystem/ │ ├── StudentManagementSystem.java   # Main class (menu + file handling) ├── AddStudent.java                 # Logic for adding student ├── ViewStudents.java               # Logic for viewing students ├── UpdateStudent.java              # Logic for updating student ├── DeleteStudent.java              # Logic for deleting student └── students.txt                    # Data file (auto-created if not present)
 
 ---
 
@@ -39,12 +40,15 @@ When viewed in the program, it will display like:
    git clone https://github.com/your-username/student-management-system.git
 
 2. - Navigate into the project folder:
+  ```bash
    cd student-management-system
-- 
+ 
 3. - Compile the Java files:
+   ```bash
    javac *.java
 
 4. - Run the program:
+   ```bash
    java StudentManagementSystem
 
 ## 📖 Learning Outcomes
@@ -52,10 +56,4 @@ When viewed in the program, it will display like:
 - Implement CRUD operations without a database.
 - Apply real-world logic for file-based data management.
 - Build menu-driven console applications.
-
-
-
-
-
-- 
 
