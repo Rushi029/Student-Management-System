@@ -1,7 +1,7 @@
 # 📚 Student Management System (Java File Handling)
 
 A simple **console-based Student Management System** built in Java that demonstrates **CRUD operations** (Create, Read, Update, Delete) using **File Handling** instead of a database.  
-All student records are stored in a text file (`students.txt` or `studentsRecords.txt`) in the format:
+All student records are stored in a text file (`studentsRecords.txt`) in the format:
 
 ---
 
