@@ -23,7 +23,6 @@ public class DeleteStudent {
         } else {
             System.out.println("Student ID not found.");
         }
-
         return updatedRecords;
     }
 }

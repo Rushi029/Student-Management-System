@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+
 public class StudentManagementSystem {
     private static final String FILE_NAME = "studentsRecords.txt";
 
@@ -25,7 +26,9 @@ public class StudentManagementSystem {
             switch (choice) {
                 case 1 -> {
                     String record = addObj.getStudentRecord(sc);
-                    writeRecord(record);
+                    if (record != null) { // Only write if record is valid
+                        writeRecord(record);
+                    }
                 }
                 case 2 -> {
                     List<String> records = readRecords();
@@ -49,7 +52,7 @@ public class StudentManagementSystem {
         sc.close();
     }
 
-    // Helper: Write single record
+    // Write single record
     private static void writeRecord(String record) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE_NAME, true))) {
             bw.write(record);
@@ -59,7 +62,8 @@ public class StudentManagementSystem {
             System.out.println("Error writing to file.");
         }
     }
-    // Helper: Read all records
+
+    // Read all records
     private static List<String> readRecords() {
         List<String> records = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(FILE_NAME))) {
@@ -73,7 +77,7 @@ public class StudentManagementSystem {
         return records;
     }
 
-    // Helper: Rewrite all records (used for update/delete)
+    // Rewrite all records (used for update/delete)
     private static void writeAllRecords(List<String> records) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE_NAME))) {
             for (String record : records) {
