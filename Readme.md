@@ -48,7 +48,7 @@ When viewed in the program, it will display like:
    git clone https://github.com/your-username/student-management-system.git
 
 2. Navigate into the project folder:
-  ```bash
+   ```bash
    cd student-management-system
  
 3. Compile the Java files:
@@ -58,8 +58,8 @@ When viewed in the program, it will display like:
 4. Run the program:
    ```bash
    java StudentManagementSystem
+   
 ---
-
 ## 📖 Learning Outcomes
 - Understand Java File Handling concepts.
 - Implement CRUD operations without a database.
